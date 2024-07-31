@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル
+------------------------------------------ */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333;
+}
