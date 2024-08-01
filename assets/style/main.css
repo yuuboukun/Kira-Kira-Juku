@@ -6,3 +6,115 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   color: #333;
 }
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+/* 部品
+------------------------------------------ */
+
+/* ヘッダー
+------------------------------------------ */
+.header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin-left: 16px;
+}
+
+.header__title {
+  font-size: 22px;
+}
+
+/* ハンバーガーボタン */
+.hamburger-btn {
+  width: 70px;
+  height: 70px;
+  background: #005BAC;
+}
+
+@media (min-width: 768px) {
+  .hamburger-btn {
+    display: none;
+  }
+}
+
+.hamburger-btn .bi {
+  color: #fff;
+  font-size: 35px;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    transform: translateX(100%);
+    transition: all .3s;
+    background: #005BAC;
+    padding: 20px 20px 0;
+    font-size: 18px;
+    line-height: 1.444;
+  }
+
+  .header__list {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .header__list + .header__list {
+    padding-top: 20px;
+  }
+
+  .header__list .bi {
+    padding-right: 12px;
+  }
+
+  .header__btn {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 20px 75px;
+    background: #fff;
+    border-radius: 50px;
+  }
+
+  .header__btn a {
+    color: #005BAC;
+    letter-spacing: 0;
+    font-weight: bold;
+  }
+}
+
+/* アクティブ状態 */
+.hamburger-menu-active {
+  transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+  .hamburger-menu {
+    position: static;
+  }
+
+  .header__nav {
+    display: flex;
+  }
+
+  .header__list a {
+    color: #333;
+  }
+}
