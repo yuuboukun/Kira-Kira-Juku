@@ -12,7 +12,7 @@
         <meta property="og:description" content="難関大学の合格実績No.1のKira-Kira Jukuが、現役高校生・高卒生向け入学説明会の申し込みを開始しました。">
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://example.com">
-        <meta property="og:image" content="https://example.com/assets/images/main_visual.jpg">
+        <meta property="og:image" content="https://example.com/assets/images/ogp.jpg">
         <meta property="og:site_name" content="Kira-Kira Juku">
 
         <!-- Google Fonts -->
@@ -61,7 +61,20 @@
 
             <!-- ヒーロー -->
             <section class="hero">
-
+                <picture>
+                    <source media="(min-width: 768px)" srcset="assets/images/hero_pc.jpg">
+                    <img src="assets/images/hero_sp.jpg" alt="" class="hero__image">
+                </picture>
+                <div class="hero__announce">
+                    <div class="hero__ranking">
+                        <img src="assets/images/frame-left.png" alt="" class="hero__frame hero__frame_left">
+                        <p class="hero__achievement">難関大学の合格実績<span class="hero__achievement-no">No<span class="hero__achievement-num">1</span></span></p>
+                        <img src="assets/images/frame-right.png" alt="" class="hero__frame hero__frame_right">
+                    </div>
+                    <!-- /.hero__ranking -->
+                    <p class="hero__text">No.1現役高校生・高卒生</p>
+                    <h2 class="hero__title">入学説明会のお申し込みの開始</h2>
+                </div>
             </section>
 
             <!-- 3つの理由 -->

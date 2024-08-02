@@ -36,8 +36,24 @@ li {
   margin-left: 16px;
 }
 
+@media (min-width: 768px) {
+  .header {
+    height: 101px;
+    padding-inline: 19.79vw;
+  }
+}
+
 .header__title {
   font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #005BAC;
+}
+
+@media (min-width: 768px) {
+  .header__title {
+    font-size: 1.67vw;
+  }
 }
 
 /* ハンバーガーボタン */
@@ -67,8 +83,8 @@ li {
     transform: translateX(100%);
     transition: all .3s;
     background: #005BAC;
-    padding: 20px 20px 0;
-    font-size: 18px;
+    padding: 20px 5.128vw 0;
+    font-size: 4.6vw;
     line-height: 1.444;
   }
 
@@ -88,7 +104,7 @@ li {
   .header__btn {
     margin-top: 32px;
     margin-bottom: 32px;
-    padding: 20px 75px;
+    padding: 20px 21.79vw;
     background: #fff;
     border-radius: 50px;
   }
@@ -108,13 +124,55 @@ li {
 @media (min-width: 768px) {
   .hamburger-menu {
     position: static;
+    /* font-size: 20px; */
+    font-size: 1vw;
   }
 
   .header__nav {
     display: flex;
+    align-items: center;
+    /* gap: 29px; */
+    gap: 1.51vw;
   }
 
   .header__list a {
     color: #333;
   }
+
+  .header__list .bi {
+    display: none;
+  }
+
+  .header__btn {
+    background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
+    padding: .83vw 2.14vw;    padding: .83vw 2.14vw;
+    border-radius: 50px;
+  }
+}
+
+/* ヒーロー
+------------------------------------------ */
+.hero {
+  position: relative;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__announce {
+  position: absolute;
+  top: 35px;
+}
+
+.hero__ranking {
+  display: flex;
+}
+
+.hero__achievement {
+  font-size: 11px;
+}
+
+.hero__achievement-no {
+  display: block;
 }
