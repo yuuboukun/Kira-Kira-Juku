@@ -29,6 +29,39 @@ li {
   margin: auto;
 }
 
+.section__title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2857;
+}
+
+/* 入学説明会に申し込む */
+.apply {
+  background: #FF55551A;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.apply__text {
+  font-size: 16px;
+  margin-bottom: 12px;
+  margin-inline: 28px;
+  line-height: 1.75;
+}
+
+.apply__button {
+  display: inline-block;
+  background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
+  border-radius: 50px;
+  width: 305px;
+  height: 69px;
+  line-height: 69px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 /* ヘッダー
 ------------------------------------------ */
 .header {
@@ -309,4 +342,69 @@ li {
 
 .hero__button_request {
   background: #3AC8AD;
+}
+
+/* 3つの理由
+------------------------------------------ */
+.reasons {
+  margin-top: 24px;
+}
+
+.reasons__num {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #F11F8D;
+}
+
+.reasons__title {
+  margin-bottom: 17px;
+}
+
+@media (min-width: 768px) {
+  .reasons__item {
+    display: flex;
+    gap: 40px;
+    margin-left: 19.79vw;
+    margin-right: 19.79vw;
+  }
+
+  .reasons__second {
+    flex-direction: row-reverse;
+  }
+}
+.reasons__image {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .reason__img {
+    width: 560px;
+    height: 346px;
+  }
+}
+
+.reasons__item-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.reasons__point {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #F11F8D;
+  font-size: 24px;
+}
+
+.reasons__num {
+  font-size: 36px;
+}
+
+.reasons__description {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 36px;
 }
