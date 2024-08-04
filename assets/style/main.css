@@ -31,12 +31,12 @@ li {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 1160px;
+    max-width: 72.5rem;
   }
 }
 
 .section__title {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: bold;
   text-align: center;
   line-height: 1.2857;
@@ -46,32 +46,32 @@ li {
 .apply {
   background: #FF55551A;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 @media (min-width: 768px) {
   .apply {
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 }
 
 .apply__text {
-  font-size: 16px;
-  margin-bottom: 12px;
-  margin-inline: 28px;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  margin-inline: 1.75rem;
   line-height: 1.75;
 }
 
 .apply__button {
   display: inline-block;
   background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
-  border-radius: 50px;
-  width: 305px;
-  height: 69px;
-  line-height: 69px;
-  font-size: 20px;
+  border-radius: 3.125rem;
+  width: 19.0625rem;
+  height: 4.3125rem;
+  line-height: 4.3125rem;
+  font-size: 1.25rem;
   font-weight: bold;
   transition: all .3s;
 }
@@ -82,9 +82,9 @@ li {
 
 @media (min-width: 768px) {
   .apply__button {
-    width: 360px;
-    height: 75px;
-    font-size: 24px;
+    width: 22.5rem;
+    height: 4.6875rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -95,7 +95,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 4.375rem;
   margin-left: 4.267vw;
 }
 
@@ -108,7 +108,7 @@ li {
 }
 
 .header__title {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #005BAC;
@@ -116,14 +116,14 @@ li {
 
 @media (min-width: 768px) {
   .header__title {
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 
 /* ハンバーガーボタン */
 .hamburger-btn {
-  width: 70px;
-  height: 70px;
+  width: 4.375rem;
+  height: 4.375rem;
   background: #005BAC;
 }
 
@@ -135,43 +135,43 @@ li {
 
 .hamburger-btn .bi {
   color: #fff;
-  font-size: 35px;
+  font-size: 2.1875rem;
 }
 
 @media (max-width: 768px) {
   .hamburger-menu {
     z-index: 1000;
     position: fixed;
-    top: 70px;
+    top: 4.375rem;
     left: 0;
     width: 100%;
     transform: translateX(100%);
     transition: all .3s;
     background: #005BAC;
-    padding: 20px 5.128vw 0;
+    padding: 1.25rem 5.128vw 0;
     font-size: 4.6vw;
     line-height: 1.444;
   }
 
   .header__list {
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 1.25rem;
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.5);
   }
 
   .header__list + .header__list {
-    padding-top: 20px;
+    padding-top: 1.25rem;
   }
 
   .header__list .bi {
-    padding-right: 12px;
+    padding-right: 0.75rem;
   }
 
   .header__btn {
-    margin-top: 32px;
-    margin-bottom: 32px;
-    padding: 20px 21.79vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.25rem 21.79vw;
     background: #fff;
-    border-radius: 50px;
+    border-radius: 3.125rem;
   }
 
   .header__btn a {
@@ -189,14 +189,12 @@ li {
 @media (min-width: 768px) {
   .hamburger-menu {
     position: static;
-    /* font-size: 20px; */
-    font-size: 1vw;
+    font-size: 1.25rem;
   }
 
   .header__nav {
     display: flex;
     align-items: center;
-    /* gap: 29px; */
     gap: 1.51vw;
   }
 
@@ -210,8 +208,8 @@ li {
 
   .header__btn {
     background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
-    padding: .83vw 2.14vw;    padding: .83vw 2.14vw;
-    border-radius: 50px;
+    padding: .83vw 2.14vw;
+    border-radius: 3.125rem;
   }
 }
 
@@ -236,7 +234,7 @@ li {
 
 .hero__announce {
   position: absolute;
-  top: 35px;
+  top: 2.1875rem;
   left: 4.276vw;
 }
 
@@ -252,7 +250,7 @@ li {
 }
 
 .hero__achievement {
-  font-size: 11px;
+  font-size: 0.6875rem;
   line-height: 1.4545;
 }
 
@@ -268,7 +266,7 @@ li {
   font-weight: 800;
   font-style: italic;
   color: #F11F8D;
-  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 2.2;
   text-align: center;
 }
@@ -280,7 +278,7 @@ li {
 }
 
 .hero__achievement-num {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 @media (min-width: 768px) {
@@ -290,8 +288,8 @@ li {
 }
 
 .hero__frame {
-  width: 24px;
-  height: 69px;
+  width: 1.5rem;
+  height: 4.3125rem;
 }
 
 @media (min-width: 768px) {
@@ -302,7 +300,7 @@ li {
 }
 
 .hero__text {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 @media (min-width: 768px) {
@@ -312,7 +310,7 @@ li {
 }
 
 .hero__title {
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-weight: 900;
   color: #005BAC;
 }
@@ -327,8 +325,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 24px;
-  gap: 12px;
+  margin-top: 1.5rem;
+  gap: 0.75rem;
 }
 
 @media (min-width: 768px) {
@@ -343,11 +341,11 @@ li {
 }
 
 .hero__button {
-  width: 250px;
-  height: 48px;
+  width: 15.625rem;
+  height: 3rem;
   background: #77CB33;
-  border-radius: 50px;
-  font-size: 16px;
+  border-radius: 3.125rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,25 +376,25 @@ li {
 /* 3つの理由
 ------------------------------------------ */
 .reasons {
-  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
 .reasons__num {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #F11F8D;
 }
 
 .reasons__title {
-  margin-bottom: 17px;
+  margin-bottom: 1.0625rem;
 }
 
 @media (min-width: 768px) {
   .reasons__item {
     display: flex;
-    gap: 40px;
-    margin-bottom: 48px;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
   }
 
   .reasons__second {
@@ -409,13 +407,13 @@ li {
 }
 
 .reasons__image {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 768px) {
   .reasons__image {
     width: clamp(400px, 29.17vw, 560px);
-    height: 346px;
+    height: 21.625rem;
     margin: 0;
     flex-shrink: 0;
   }
@@ -428,9 +426,9 @@ li {
 }
 
 .reasons__item-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .reasons__point {
@@ -439,44 +437,120 @@ li {
   font-weight: bold;
   font-style: italic;
   color: #F11F8D;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .reasons__num {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 .reasons__description {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.75;
-  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
 }
 
 /* コース・目的
 ------------------------------------------ */
 .courses {
-  margin-top: 64px;
+  margin-top: 4rem;
 }
 .courses__nav {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-top: 24px;
+  gap: 0.9375rem;
+  margin-top: 1.5rem;
 }
 
-.courses__tab-content {
-  margin-top: 28px;
-  margin-bottom: 56px;
+@media (min-width: 768px) {
+  .courses__nav {
+    gap: 2.1875rem;
+  }
 }
 
 .courses__tab {
-  padding: 20px 19px;
-  border-radius: 12px 12px 0px 0px;
+  padding: 1.25rem 1.1875rem;
+  border-radius: 0.75rem 0.75rem 0rem 0rem;
   background: #F0F0F0;
+}
+
+@media (min-width: 768px) {
+  .courses__tab {
+    width: 34.5rem;
+    height: 4.6875rem;
+    text-align: center;
+  }
+}
+
+.courses__tab.current {
+  background: #F2F9FF;
+}
+
+.courses__contents {
+  background: #F2F9FF;
+}
+
+@media (min-width: 768px) {
+  .courses__contents {
+    background: none;
+  }
+}
+
+.courses__tab-content {
+  padding-top: 1.75rem;
+  padding-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .courses__tab-content {
+    background: #F2F9FF;
+  }
+}
+
+@media (min-width: 768px) {
+  .courses .section__title {
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .courses__tab-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.1875rem;
+  }
+
+  .courses__img {
+    width: 532px;
+    height: 329px;
+  }
+
+  .courses__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .courses__tab a {
   color: #333;
-  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.courses__content-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.8;
+  padding-top: 12px;
+  padding-bottom: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.courses__content-title .bi {
+  color: #005BAC;
+  margin-right: 3px;
+  font-size: 28px;
   font-weight: bold;
 }
