@@ -31,7 +31,7 @@ li {
 
 @media (min-width: 768px) {
   .container {
-    width: 60.4167vw;
+    max-width: 1160px;
   }
 }
 
@@ -50,6 +50,13 @@ li {
   padding-bottom: 40px;
 }
 
+@media (min-width: 768px) {
+  .apply {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
 .apply__text {
   font-size: 16px;
   margin-bottom: 12px;
@@ -66,6 +73,19 @@ li {
   line-height: 69px;
   font-size: 20px;
   font-weight: bold;
+  transition: all .3s;
+}
+
+.apply__button:hover {
+  opacity: .5;
+}
+
+@media (min-width: 768px) {
+  .apply__button {
+    width: 360px;
+    height: 75px;
+    font-size: 24px;
+  }
 }
 
 /* ヘッダー
@@ -81,9 +101,9 @@ li {
 
 @media (min-width: 768px) {
   .header {
-    height: 101px;
-    margin-left: 19.79vw;
-    margin-right: 19.79vw;
+    height: 6.3125rem;
+    max-width: 72.5rem;
+    margin: auto;
   }
 }
 
@@ -96,7 +116,7 @@ li {
 
 @media (min-width: 768px) {
   .header__title {
-    font-size: 1.67vw;
+    font-size: 20px;
   }
 }
 
@@ -332,6 +352,11 @@ li {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  transition: all .3s;
+}
+
+.hero__button:hover {
+  opacity: .5;
 }
 
 @media (min-width: 768px) {
@@ -389,7 +414,7 @@ li {
 
 @media (min-width: 768px) {
   .reasons__image {
-    width: clamp(300px, 29.17vw, 560px);
+    width: clamp(400px, 29.17vw, 560px);
     height: 346px;
     margin: 0;
     flex-shrink: 0;
@@ -425,4 +450,33 @@ li {
   font-size: 16px;
   line-height: 1.75;
   margin-bottom: 36px;
+}
+
+/* コース・目的
+------------------------------------------ */
+.courses {
+  margin-top: 64px;
+}
+.courses__nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 24px;
+}
+
+.courses__tab-content {
+  margin-top: 28px;
+  margin-bottom: 56px;
+}
+
+.courses__tab {
+  padding: 20px 19px;
+  border-radius: 12px 12px 0px 0px;
+  background: #F0F0F0;
+}
+
+.courses__tab a {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
 }
