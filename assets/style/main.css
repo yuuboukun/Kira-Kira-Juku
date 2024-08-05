@@ -116,7 +116,8 @@ li {
 
 @media (min-width: 768px) {
   .header__title {
-    font-size: 2rem;
+    font-size: 1.667vw;
+	margin-left: 19.79vw;
   }
 }
 
@@ -196,6 +197,12 @@ li {
     display: flex;
     align-items: center;
     gap: 1.51vw;
+  }
+
+  @media (min-width: 768px) {
+	.header__nav {
+	  margin-right: 19.79vw;
+	}
   }
 
   .header__list a {
@@ -625,4 +632,63 @@ li {
 	font-family: "Poppins", sans-serif;
 	font-weight: bold;
 	font-size: 1.75rem;
+}
+
+/* 	フッター
+------------------------------------------ */
+@media (min-width: 768px) {
+	.footer__links {
+		display: flex;
+		/* justify-content: space-between; */
+	}
+}
+
+.footer__faq {
+	background-image: url("../images/faq.jpg");
+}
+
+.footer__find-class {
+	background-image: url("../images/find-class.jpg");
+}
+
+.footer__faq,
+.footer__find-class {
+	background-size: cover;
+    background-position: center;
+	height: 170px;
+	display: flex;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.footer__faq,
+	.footer__find-class {
+		height: 16.667vw;
+		width: 50%;
+		justify-content: center;
+	}
+}
+
+.footer__faq-title,
+.footer__find-class-title {
+	font-size: 1.375rem;
+	font-weight: bold;
+	color: #fff;
+	margin-left: 4.2667vw;
+}
+
+@media (min-width: 768px) {
+	.footer__faq-title,
+	.footer__find-class-title {
+		font-size: 1.667vw;
+		margin: 0;
+	}
+}
+
+.footer__copyright {
+	display: block;
+	background: #DDDDDD;
+	text-align: center;
+	padding-block: 2rem;
+	font-size: 13px;
 }
