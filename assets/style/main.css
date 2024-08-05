@@ -390,9 +390,15 @@ li {
   margin-bottom: 1.0625rem;
 }
 
+.reasons__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   .reasons__item {
-    display: flex;
+    flex-direction: row;
     gap: 2.5rem;
     margin-bottom: 3rem;
   }
@@ -457,6 +463,17 @@ li {
 .courses {
   margin-top: 4rem;
 }
+
+.courses__contents {
+  margin-bottom: 3.9375rem;
+}
+
+@media (min-width: 768px) {
+  .courses__contents {
+    margin-bottom: 4.5rem;
+  }
+}
+
 .courses__nav {
   display: flex;
   justify-content: center;
@@ -532,7 +549,7 @@ li {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0.5rem;
   }
 }
 
@@ -549,18 +566,63 @@ li {
 }
 
 .courses__content-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  line-height: 1.8;
-  padding-top: 12px;
-  padding-bottom: 28px;
-  display: flex;
-  align-items: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+	line-height: 1.8;
+	padding-top: 0.75rem;
+	padding-bottom: 1.75rem;
+	display: flex;
+	align-items: center;
 }
 
 .courses__content-title .bi {
-  color: #005BAC;
-  margin-right: 3px;
-  font-size: 28px;
-  font-weight: bold;
+	color: #005BAC;
+	margin-right: 0.1875rem;
+	font-size: 1.75rem;
+	font-weight: bold;
+	}
+
+/* 費用
+------------------------------------------ */
+.cost {
+	margin-top: 4rem;
+}
+
+.cost__table {
+	margin-top: 1.4375rem;
+	margin-bottom: 4rem;
+	border: 0.1875rem solid #CCCCCC;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+@media (min-width: 768px) {
+	.cost__table {
+		max-width: 37.125rem;
+		margin: 2.1875rem auto 4.5rem;
+	}
+}
+
+.cost__table-head-header {
+	padding-block: 1.25rem;
+	background: #F5F5F5;
+	font-size: 1rem;
+}
+
+.cost__table-body-header {
+	padding-block: 1.25rem;
+	font-size: 1rem;
+	border: 0.0625rem solid #CCC;
+}
+
+.cost__table-body-cell {
+	color: #F23397;
+	border: 0.0625rem solid #CCC;
+	text-align: center;
+}
+
+.cost__table-amount {
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	font-size: 1.75rem;
 }
