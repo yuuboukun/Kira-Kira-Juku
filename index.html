@@ -28,6 +28,9 @@
         <!-- Bootstrap Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+        <!-- Smart Tab
+        <link href="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/css/smart_tab_all.min.css" rel="stylesheet"> -->
+
         <link rel="stylesheet" href="assets/style/main.css">
     </head>
 
@@ -136,88 +139,91 @@
             <section class="courses" id="courses">
                 <h2 class="section__title">コース・目的</h2>
                 <!-- タブナビゲーション -->
-                <ul class="courses__nav">
-                    <li class="courses__tab current"><a href="#tab1">学年別から選ぶ</a></li>
-                    <li class="courses__tab"><a href="#tab2">目的別から選ぶ</a></li>
-                </ul>
-                <!-- タブコンテンツ -->
-                <div class="courses__contents">
-                    <!-- タブ１ -->
-                    <div id="tab1" class="courses__tab-content container">
-                        <!-- 1個目 -->
-                        <div class="courses__content-item">
-                            <div class="courses__img">
-                                <img src="assets/images/cource01.png" alt="">
+                <!-- <div id="smarttab" class="tab"> -->
+                    <ul class="courses__nav">
+                        <li class="courses__tab current"><a href="#tab1">学年別から選ぶ</a></li>
+                        <li class="courses__tab"><a href="#tab2">目的別から選ぶ</a></li>
+                    </ul>
+                    <!-- タブコンテンツ -->
+                    <div class="courses__contents">
+                        <!-- タブ１ -->
+                        <div id="tab1" class="courses__tab-content container">
+                            <!-- 1個目 -->
+                            <div class="courses__content-item">
+                                <div class="courses__img">
+                                    <img src="assets/images/cource01.png" alt="">
+                                </div>
+                                <!-- /.courses__img -->
+                                <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>高卒生</div>
                             </div>
-                            <!-- /.courses__img -->
-                            <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>高卒生</div>
-                        </div>
-                        <!-- /.courses__content-item -->
-                        <!-- 2個目 -->
-                        <div class="courses__content-item">
-                            <div class="courses__img">
-                                <img src="assets/images/cource02.png" alt="">
+                            <!-- /.courses__content-item -->
+                            <!-- 2個目 -->
+                            <div class="courses__content-item">
+                                <div class="courses__img">
+                                    <img src="assets/images/cource02.png" alt="">
+                                </div>
+                                <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>高校３年生</div>
                             </div>
-                            <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>高校３年生</div>
-                        </div>
-                        <!-- /.courses__content-item -->
-                        <!-- 3個目 -->
-                        <div class="courses__content-item">
-                            <div class="courses__img">
-                                <img src="assets/images/cource03.png" alt="">
+                            <!-- /.courses__content-item -->
+                            <!-- 3個目 -->
+                            <div class="courses__content-item">
+                                <div class="courses__img">
+                                    <img src="assets/images/cource03.png" alt="">
+                                </div>
+                                <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>高校２年生</div>
                             </div>
-                            <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>高校２年生</div>
-                        </div>
-                        <!-- /.courses__content-item -->
-                        <!-- 4個目 -->
-                        <div class="courses__content-item">
-                            <div class="courses__img">
-                                <img src="assets/images/cource04.png" alt="">
+                            <!-- /.courses__content-item -->
+                            <!-- 4個目 -->
+                            <div class="courses__content-item">
+                                <div class="courses__img">
+                                    <img src="assets/images/cource04.png" alt="">
+                                </div>
+                                <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>高校１年生</div>
                             </div>
-                            <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>高校１年生</div>
+                            <!-- /.courses__content-item -->
                         </div>
-                        <!-- /.courses__content-item -->
-                    </div>
-                    <!-- /#tab1.courses__tab -->
+                        <!-- /#tab1.courses__tab -->
 
-                    <!-- タブ2 -->
-                    <div id="tab2" class="courses__tab-content container">
-                        <!-- 1個目 -->
-                        <div class="courses__content-item">
-                            <div class="courses__img">
-                                <img src="assets/images/cource05.png" alt="">
+                        <!-- タブ2 -->
+                        <div id="tab2" class="courses__tab-content container">
+                            <!-- 1個目 -->
+                            <div class="courses__content-item">
+                                <div class="courses__img">
+                                    <img src="assets/images/cource05.png" alt="">
+                                </div>
+                                <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>難関大学・医学部合格を目指す</div>
                             </div>
-                            <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>難関大学・医学部合格を目指す</div>
-                        </div>
-                        <!-- /.courses__content-item -->
-                        <!-- 2個目 -->
-                        <div class="courses__content-item">
-                            <div class="courses__img">
-                                <img src="assets/images/cource06.png" alt="">
+                            <!-- /.courses__content-item -->
+                            <!-- 2個目 -->
+                            <div class="courses__content-item">
+                                <div class="courses__img">
+                                    <img src="assets/images/cource06.png" alt="">
+                                </div>
+                                <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>名門私立大学合格を目指す</div>
                             </div>
-                            <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>名門私立大学合格を目指す</div>
-                        </div>
-                        <!-- /.courses__content-item -->
-                        <!-- 3個目 -->
-                        <div class="courses__content-item">
-                            <div class="courses__img">
-                                <img src="assets/images/cource07.png" alt="">
+                            <!-- /.courses__content-item -->
+                            <!-- 3個目 -->
+                            <div class="courses__content-item">
+                                <div class="courses__img">
+                                    <img src="assets/images/cource07.png" alt="">
+                                </div>
+                                <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>国公立大学合格を目指す</div>
                             </div>
-                            <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>国公立大学合格を目指す</div>
-                        </div>
-                        <!-- /.courses__content-item -->
-                        <!-- 4個目 -->
-                        <div class="courses__content-item">
-                            <div class="courses__img">
-                                <img src="assets/images/cource08.png" alt="">
+                            <!-- /.courses__content-item -->
+                            <!-- 4個目 -->
+                            <div class="courses__content-item">
+                                <div class="courses__img">
+                                    <img src="assets/images/cource08.png" alt="">
+                                </div>
+                                <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>海外大学合格を目指す</div>
                             </div>
-                            <div class="courses__content-title"><i class="bi bi-arrow-right-short"></i>海外大学合格を目指す</div>
+                            <!-- /.courses__content-item -->
                         </div>
-                        <!-- /.courses__content-item -->
+                        <!-- /#tab1.courses__tab -->
                     </div>
-                    <!-- /#tab1.courses__tab -->
-                </div>
-                <!-- /.courses__contents -->
+                    <!-- /.courses__contents -->
+                <!-- </div>
+                /#smarttab.tab -->
 
             </section>
 
@@ -248,6 +254,10 @@
 
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <!-- smartTabのJS
+        <script src="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js"></script> -->
+
         <script src="assets/script/main.js"></script>
     </body>
 
