@@ -42,6 +42,12 @@ li {
   line-height: 1.2857;
 }
 
+@media (min-width: 768px) {
+	.section__title {
+		font-size: 36px;
+	}
+}
+
 /* 入学説明会に申し込む */
 .apply {
   background: #FF55551A;
@@ -58,22 +64,28 @@ li {
 }
 
 .apply__text {
-  font-size: 1rem;
-  margin-bottom: 0.5625rem;
-  margin-inline: 1.3125rem;
-  line-height: 1.75;
+	font-size: 1rem;
+	margin-bottom: 0.5625rem;
+	margin-inline: 42px;
+	line-height: 1.75;
+}
+
+@media (min-width: 768px) {
+	.apply__text {
+		margin-bottom: 20px;
+	}
 }
 
 .apply__button {
-  display: inline-block;
-  background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
-  border-radius: 3.125rem;
-  width: 19.0625rem;
-  height: 4.3125rem;
-  line-height: 4.3125rem;
-  font-size: 1.25rem;
-  font-weight: bold;
-  transition: all .3s;
+	display: inline-block;
+	background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
+	border-radius: 3.125rem;
+	width: 19.0625rem;
+	height: 4.3125rem;
+	line-height: 4.3125rem;
+	font-size: 1.25rem;
+	font-weight: bold;
+	transition: all .3s;
 }
 
 .apply__button:hover {
@@ -85,6 +97,7 @@ li {
     width: 22.5rem;
     height: 4.6875rem;
     font-size: 1.5rem;
+	padding-left: 1.25rem;
   }
 }
 
@@ -409,19 +422,25 @@ li {
 /* 3つの理由
 ------------------------------------------ */
 .reasons {
-  margin-top: 1.5rem;
-}
-
-.reasons__title {
-  margin-bottom: 1.25rem;
+	margin-top: 1.5rem;
 }
 
 @media (min-width: 768px) {
-  .reasons__title {
-    font-size: 2.25rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.875rem;
-  }
+	.reasons .container {
+		margin-bottom: 4.3125rem;
+	}
+}
+
+.reasons__title {
+	margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+	.reasons__title {
+		font-size: 2.25rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.875rem;
+	}
 }
 
 
@@ -445,12 +464,12 @@ li {
 }
 
 @media (min-width: 768px) {
-  .reasons__item {
-    flex-direction: row;
-    gap: 2.5rem;
-    margin-bottom: 3rem;
-    align-items: flex-start;
-  }
+	.reasons__item {
+		flex-direction: row;
+		gap: 2.5rem;
+		margin-bottom: 3rem;
+		align-items: flex-start;
+	}
 
   .reasons__second {
     flex-direction: row-reverse;
@@ -513,105 +532,114 @@ li {
 }
 
 .reasons__num {
-  font-size: 2.375rem;
+	font-size: 2.25rem;
 }
 
+@media (min-width: 768px) {
+	.reasons__title-text {
+		line-height: 1.6;
+	}
+}
+
+
 .reasons__description {
-  font-size: 1rem;
-  line-height: 1.75;
-  margin-bottom: 2.0625rem;
+	font-size: 1rem;
+	line-height: 1.75;
+	margin-bottom: 2.0625rem;
 }
 
 /* コース・目的
 ------------------------------------------ */
 .courses {
-  margin-top: 4.125rem;
+	margin-top: 4.125rem;
 }
 
 .courses .section__title {
-  padding-left: 0.875rem;
-}
-
-.courses__contents {
-  margin-bottom: 3.9375rem;
+	padding-left: 0.875rem;
 }
 
 @media (min-width: 768px) {
-  .courses__contents {
-    margin-bottom: 4.5rem;
-  }
+	.courses .section__title {
+		margin-top: 4.625rem;
+		margin-bottom: 2rem;
+		padding-right: 0.9375rem;
+	}
+
+.courses__contents {
+	margin-bottom: 3.9375rem;
+	background: #F2F9FF;
+}
+
+@media (min-width: 768px) {
+	.courses__contents {
+		margin-bottom: 4.5rem;
+		background: none;
+	}
 }
 
 .courses__nav {
-  display: flex;
-  justify-content: center;
-  gap: 0.9375rem;
-  margin-top: 1.5rem;
+	display: flex;
+	justify-content: center;
+	gap: 0.9375rem;
+	margin-top: 1.5rem;
 }
 
 @media (min-width: 768px) {
-  .courses__nav {
-    gap: 2.1875rem;
-    width: 91.4667vw;
-    max-width: 72.5rem;
-    margin: auto;
-  }
+	.courses__nav {
+		gap: 2.1875rem;
+		width: 91.4667vw;
+		max-width: 72.5rem;
+		margin: auto;
+	}
 }
 
 .courses__tab {
-  padding: 1.25rem 1.1875rem;
-  border-radius: 0.75rem 0.75rem 0rem 0rem;
-  background: #F0F0F0;
+	padding: 1.25rem 1.1875rem;
+	border-radius: 0.75rem 0.75rem 0rem 0rem;
+	background: #F0F0F0;
 }
 
 @media (min-width: 768px) {
-  .courses__tab {
-    width: 35rem;
-    height: 4.6875rem;
-    text-align: center;
-  }
+	.courses__tab {
+		width: 35rem;
+		height: 4.6875rem;
+		text-align: center;
+	}
 }
 
 .courses__tab.current {
-  background: #F2F9FF;
-}
-
-.courses__contents {
-  background: #F2F9FF;
-}
-
-@media (min-width: 768px) {
-  .courses__contents {
-    background: none;
-  }
+	background: #F2F9FF;
 }
 
 .courses__tab-content {
-  background: #F2F9FF;
-  padding-top: 1.75rem;
-  padding-bottom: 1.5625rem;
+	background: #F2F9FF;
+	padding-top: 1.75rem;
+	padding-bottom: 1.5625rem;
 }
 
 @media (min-width: 768px) {
-  .courses__tab-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2.1875rem;
-  }
+	.courses__tab-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		column-gap: 2rem;
+		row-gap: 2.5rem;
+		padding-top: 2.0625rem;
+		padding-bottom: 30px;
+	}
+}
+
+.courses__image {
+	max-width: 33.25rem;
+	width: 43.49vw;
+	height: 220px;
 }
 
 @media (min-width: 768px) {
-  .courses .section__title {
-    margin-top: 4.5rem;
-    margin-bottom: 2rem;
-  }
-
-  .courses__image {
-    max-width: 33.25rem;
-    width: 43.49vw;
-    height: 220px;
-  }
+	.courses__image {
+		height: 20.5625rem;
+	}
+}
 
   .courses__img {
     width: 100%;
@@ -627,9 +655,26 @@ li {
   font-weight: bold;
 }
 
+@media (min-width: 768px) {
+  .courses__tab a {
+	font-size: 1.5rem;
+  }
+
+  .courses__tab:first-child a {
+	padding-top: 0.125rem;
+	padding-right: 0.375rem;
+  }
+}
+
 .courses__content-item {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+	.courses__content-item {
+		height: 374px;
+	}
 }
 
 .courses__content-title {
@@ -640,7 +685,7 @@ li {
 	padding-bottom: 1.125rem;
 	display: flex;
 	align-items: center;
-  transform: translateX(-0.5rem);
+	transform: translateX(-0.5rem);
 }
 
 .courses__content-title .bi {
@@ -650,15 +695,33 @@ li {
 	font-weight: bold;
 	}
 
+@media (min-width: 768px) {
+	.courses__content-title .bi {
+		font-size: 33px;
+	}
+}
+
 /* 費用
 ------------------------------------------ */
 .cost {
 	margin-top: 4rem;
 }
 
+@media (min-width: 768px) {
+	.cost {
+		margin-top: 4.625rem;
+	}
+}
+
 .cost .section__title {
-  padding-left: 21px;
-  letter-spacing: 0.3125em;
+	padding-left: 21px;
+	letter-spacing: 0.3125em;
+}
+
+@media (min-width: 768px) {
+	.cost .section__title {
+		padding-right: 0.6875rem;
+	}
 }
 
 .cost__table {
@@ -672,35 +735,77 @@ li {
 @media (min-width: 768px) {
 	.cost__table {
 		max-width: 37.125rem;
-		margin: 2.1875rem auto 4.5rem;
+		margin: 2.1875rem auto 69px;
 	}
 }
 
 .cost__table-head-row {
-  background: #F5F5F5;
-  font-size: 1rem;
+	background: #F5F5F5;
+	font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+	.cost__table-head-row {
+		font-size: 18px;
+	}
 }
 
 .cost__table-head-classes {
 	padding: 1.3125rem 1rem;
 }
 
+@media (min-width: 768px) {
+	.cost__table-head-classes {
+		padding: 1.5625rem 0.1875rem 1.5625rem 0;
+		width: 8.8125rem;
+	}
+}
+
 .cost__table-head-fees {
-  text-align: left;
-  padding-left: 1.5625rem;
+	text-align: left;
+	padding-left: 1.5625rem;
+}
+
+@media (min-width: 768px) {
+	.cost__table-head-fees {
+		text-align: center;
+        padding-right: 1.375rem;
+	}
+}
+
+.cost__table-body {
+	font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+	.cost__table-body {
+		font-size: 18px;
+	}
 }
 
 .cost__table-body-header {
 	padding-block: 1.25rem;
-	font-size: 1rem;
 	border: 0.0625rem solid #CCC;
+}
+
+@media (min-width: 768px) {
+	.cost__table-body-header {
+		padding-top: 26px;
+		padding-bottom: 25px;
+	}
 }
 
 .cost__table-body-cell {
 	color: #F23397;
 	border: 0.0625rem solid #CCC;
 	text-align: center;
-  padding-right: 0.375rem;
+	padding-right: 0.375rem;
+}
+
+@media (min-width: 768px) {
+	.cost__table-body-cell {
+		padding-right: 0;
+	}
 }
 
 .cost__table-amount {
@@ -709,8 +814,20 @@ li {
 	font-size: 1.75rem;
 }
 
+@media (min-width: 768px) {
+	.cost__table-amount {
+		font-size: 2rem;
+	}
+}
+
 .cost__table-body-row:last-child .cost__table-body-cell {
-  padding-left: 1.375rem;
+	padding-left: 1.375rem;
+}
+
+@media (min-width: 768px) {
+	.cost__table-body-row:last-child .cost__table-body-cell {
+		padding-left: 0;
+	}
 }
 
 /* 	フッター
@@ -730,10 +847,20 @@ li {
 	background-image: url("../images/find-class_sp.jpg");
 }
 
+@media (min-width: 768px) {
+	.footer__faq {
+		background-image: url("../images/faq_pc.jpg");
+	}
+
+	.footer__find-class {
+		background-image: url("../images/find-class_pc.jpg");
+	}
+}
+
 .footer__faq,
 .footer__find-class {
 	background-size: cover;
-  background-position:  calc(50% + 0.5rem)  center;
+	background-position:  calc(50% + 0.5rem)  center;
 	height: 170px;
 	display: flex;
 	align-items: center;
@@ -742,6 +869,7 @@ li {
 @media (min-width: 768px) {
 	.footer__faq,
 	.footer__find-class {
+		background-position: center;
 		height: 16.667vw;
 		width: 50%;
 		justify-content: center;
@@ -770,6 +898,14 @@ li {
 	text-align:center;
 	padding-block: 2rem;
 	font-size: 13px;
-  letter-spacing: 0.025em;
-  padding-left: 1.125rem;
+	letter-spacing: 0.025em;
+	padding-left: 1.125rem;
+}
+
+@media (min-width: 768px) {
+	.footer__copyright {
+		padding-top: 46px;
+		padding-bottom: 60px;
+		padding-left: 0;
+	}
 }
