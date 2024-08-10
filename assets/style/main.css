@@ -3,43 +3,43 @@
 /* ページ全体のスタイル
 ------------------------------------------ */
 body {
-  font-family: 'Noto Sans JP', sans-serif;
-  color: #333;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #333;
 }
 
 a {
-  color: #fff;
-  text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 /* 部品
 ------------------------------------------ */
 .container {
-  width: 91.4667vw;
-  margin: auto;
+	width: 91.4667vw;
+	margin: auto;
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 72.5rem;
-  }
+	.container {
+		max-width: 72.5rem;
+	}
 }
 
 .section__title {
-  font-size: 1.75rem;
-  font-weight: bold;
-  text-align: center;
-  line-height: 1.2857;
+	font-size: 1.75rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.2857;
 }
 
 @media (min-width: 768px) {
@@ -50,17 +50,17 @@ li {
 
 /* 入学説明会に申し込む */
 .apply {
-  background: #FF55551A;
-  text-align: center;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+	background: #FF55551A;
+	text-align: center;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
 }
 
 @media (min-width: 768px) {
-  .apply {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-  }
+	.apply {
+		padding-top: 3.5rem;
+		padding-bottom: 3.5rem;
+	}
 }
 
 .apply__text {
@@ -89,334 +89,338 @@ li {
 }
 
 .apply__button:hover {
-  opacity: .5;
+	opacity: .6;
 }
 
 @media (min-width: 768px) {
-  .apply__button {
-    width: 22.5rem;
-    height: 4.6875rem;
-    font-size: 1.5rem;
-	padding-left: 1.25rem;
-  }
+	.apply__button {
+		width: 22.5rem;
+		height: 4.6875rem;
+		font-size: 1.5rem;
+		padding-left: 1.25rem;
+	}
+}
+
+/* スムーススクロールの設定 */
+html {
+	scroll-behavior: smooth;
 }
 
 /* ヘッダー
 ------------------------------------------ */
 .header {
-  background: #fff;
-  box-shadow: 0px 2px 8px #0000001A;
+	background: #fff;
+	box-shadow: 0px 2px 8px #0000001A;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
 }
 
 .header__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4.375rem;
-  margin-left: 4.267vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4.375rem;
+	margin-left: 4.267vw;
 }
 
 @media (min-width: 768px) {
-  .header {
-    box-shadow: 0px 2px 8px #00000029;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-  }
+	.header {
+		box-shadow: 0px 2px 8px #00000029;
+	}
 
-  .header__inner {
-    width: 60.417vw;
-    margin: auto;
-    height: 6.3125rem;
-  }
+	.header__inner {
+		width: 60.417vw;
+		margin: auto;
+		height: 6.3125rem;
+	}
 }
 
 .header__logo {
-  font-size: 1.375rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  color: #005BAC;
-}
-
-.header__logo-img {
-  width: 100%;
-  height: auto;
-  max-width: 241px;
+	font-size: 1.375rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	color: #005BAC;
 }
 
 @media (min-width: 768px) {
-  .header__logo {
-    font-size: 1.667vw;
-    width: 241px;
-    height: 45px;
-  }
+	.header__logo {
+		font-size: 1.667vw;
+		width: 18vw;
+	}
+}
+
+.header__logo-img {
+	width: 100%;
+	height: auto;
+	max-width: 241px;
 }
 
 /* ハンバーガーボタン */
 .hamburger-btn {
-  width: 4.375rem;
-  height: 4.375rem;
-  background: #005BAC;
+	width: 4.375rem;
+	height: 4.375rem;
+	background: #005BAC;
 }
 
 @media (min-width: 768px) {
-  .hamburger-btn {
-    display: none;
-  }
+	.hamburger-btn {
+		display: none;
+	}
 }
 
 .hamburger-btn .bi {
-  color: #fff;
-  font-size: 2.1875rem;
+	color: #fff;
+	font-size: 2.1875rem;
 }
 
 @media (max-width: 768px) {
-  .hamburger-menu {
-    z-index: 1000;
-    position: fixed;
-    top: 4.375rem;
-    left: 0;
-    width: 100%;
-    transform: translateX(100%);
-    transition: all .3s;
-    background: #005BAC;
-    padding: 1.25rem 5.128vw 0;
-    font-size: 4.6vw;
-    line-height: 1.444;
-    /* letter-spacing: 0.5px; */
-  }
+	.hamburger-menu {
+		z-index: 1000;
+		position: fixed;
+		top: 4.375rem;
+		left: 0;
+		width: 100%;
+		transform: translateX(100%);
+		transition: all .3s;
+		background: #005BAC;
+		padding: 1.25rem 5.128vw 0;
+		font-size: 4.6vw;
+		line-height: 1.444;
+		/* letter-spacing: 0.5px; */
+	}
 
-  .header__list {
-    padding-bottom: 1.25rem;
-    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.5);
-  }
+	.header__list {
+		padding-bottom: 1.25rem;
+		border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.5);
+	}
 
-  .header__list + .header__list {
-    padding-top: 1.25rem;
-  }
+	.header__list + .header__list {
+		padding-top: 1.25rem;
+	}
 
-  .header__list .bi {
-    padding-right: 0.6875rem;
-    font-size: 1rem;
-  }
+	.header__list .bi {
+		padding-right: 0.6875rem;
+		font-size: 1rem;
+	}
 
-  .header__btn {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 1.25rem 3.125rem 1.1875rem 5.3125rem;
-    background: #fff;
-    border-radius: 3.125rem;
-  }
+	.header__btn {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		padding: 1.25rem 3.125rem 1.1875rem 5.3125rem;
+		background: #fff;
+		border-radius: 3.125rem;
+	}
 
-  .header__btn a {
-    color: #005BAC;
-    letter-spacing: 0;
-    font-weight: bold;
-  }
+	.header__btn a {
+		color: #005BAC;
+		letter-spacing: 0;
+		font-weight: bold;
+	}
 }
 
 /* アクティブ状態 */
 .hamburger-menu-active {
-  transform: translateX(0);
-}
+	transform: translateX(0);
+	}
 
-@media (min-width: 768px) {
-  .hamburger-menu {
-    position: static;
-    font-size: 1.0417vw;
-  }
+	@media (min-width: 768px) {
+	.hamburger-menu {
+		position: static;
+		font-size: 1.0417vw;
+	}
 
-  .header__nav {
-    display: flex;
-    align-items: center;
-    gap: 2.5vw;
-  }
+	.header__nav {
+		display: flex;
+		align-items: center;
+		gap: 2.5vw;
+	}
 
-  .header__list a {
-    color: #333;
-  }
+	.header__list a {
+		color: #333;
+	}
 
-  .header__list .bi {
-    display: none;
-  }
+	.header__list .bi {
+		display: none;
+	}
 
-  .header__btn {
-    background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
-    padding: .83vw 2.14vw;
-    border-radius: 3.125rem;
-  }
+	.header__btn {
+		background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
+		padding: .83vw 2.14vw;
+		border-radius: 3.125rem;
+	}
 }
 
 /* ヒーロー
 ------------------------------------------ */
 .hero {
-  position: relative;
+	position: relative;
+	margin-top: 4.375rem;
 }
 
 @media (min-width: 768px) {
-  .hero {
-    margin-top: 6.3125rem;
-  }
+	.hero {
+		margin-top: 6.3125rem;
+	}
 }
 
 .hero__image {
-  width: 100%;
-  height: 66.667vw;
-  object-fit: cover;
+	width: 100%;
+	height: 66.667vw;
+	object-fit: cover;
 }
 
 @media (min-width: 768px) {
 .hero__image {
-  height: 33.906vw;
-  /* object-fit: cover; */
+	height: 33.906vw;
 }
 }
 
 .hero__announce {
-  position: absolute;
-  top: 2.1875rem;
-  left: 4.276vw;
+	position: absolute;
+	top: 2.1875rem;
+	left: 4.276vw;
 }
 
 @media (min-width: 768px) {
-  .hero__announce {
-    top: 5.4167vw;
-    left: 21.354vw;
-  }
+	.hero__announce {
+		top: 5.4167vw;
+		left: 21.354vw;
+	}
 }
 
 .hero__ranking {
-  display: flex;
+	display: flex;
 }
 
 .hero__achievement {
-  font-size: 0.6875rem;
-  line-height: 1.4545;
+	font-size: 0.6875rem;
+	line-height: 1.4545;
 }
 
 @media (min-width: 768px) {
-  .hero__achievement {
-    font-size: 1.0467vw;
-    padding: 0.5625rem 1.1875rem;
-  }
+	.hero__achievement {
+		font-size: 1.0467vw;
+		padding: 0.5625rem 1.1875rem;
+	}
 }
 
 .hero__achievement_no {
-  display: block;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  color: #F11F8D;
-  font-size: 1.5625rem;
-  text-align: center;
+	display: block;
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	font-style: italic;
+	color: #F11F8D;
+	font-size: 1.5625rem;
+	text-align: center;
 }
 
 @media (min-width: 768px) {
-  .hero__achievement_no {
-    font-size: 2.8125vw;
-    padding-left: 0.625rem;
-  }
+	.hero__achievement_no {
+		font-size: 2.8125vw;
+		padding-left: 0.625rem;
+	}
 }
 
 .hero__achievement-num {
-  font-size: 2.25rem;
+	font-size: 2.25rem;
 }
 
 @media (min-width: 768px) {
-  .hero__achievement-num {
-    font-size: 3.854vw;
-  }
+	.hero__achievement-num {
+		font-size: 3.854vw;
+	}
 }
 
 .hero__frame {
-  width: 1.5rem;
-  height: 4.3125rem;
+	width: 1.5rem;
+	height: 4.3125rem;
 }
 
 @media (min-width: 768px) {
-  .hero__frame {
-    width: 2.76vw;
-    height: 7.8vw;
-  }
+	.hero__frame {
+		width: 2.76vw;
+		height: 7.8vw;
+	}
 }
 
 .hero__text {
-  font-size: 0.875rem;
-  margin-top: 1.1875rem;
+	font-size: 0.875rem;
+	margin-top: 1.1875rem;
 }
 
 @media (min-width: 768px) {
-  .hero__text {
-    font-size: 1.7188vw;
-    margin-top: 1.75rem;
-    margin-bottom: 0.25rem;
-  }
+	.hero__text {
+		font-size: 1.7188vw;
+		margin-top: 1.75rem;
+		margin-bottom: 0.25rem;
+	}
 }
 
 .hero__title {
-  font-size: 1.5625rem;
-  font-weight: 900;
-  color: #005BAC;
+	font-size: 1.5625rem;
+	font-weight: 900;
+	color: #005BAC;
 }
 
 @media (min-width: 768px) {
-  .hero__title {
-    font-size: 3.125vw;
-  }
+	.hero__title {
+		font-size: 3.125vw;
+	}
 }
 
 .hero__actions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1.5rem;
-  gap: 0.75rem;
-  margin-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1.5rem;
+	gap: 0.75rem;
+	margin-bottom: 25px;
 }
 
 @media (min-width: 768px) {
-  .hero__actions {
-    flex-direction: row;
-    margin-top: 1.875vw;
-    gap: 2.08vw;
-    transform: translateY(-50%);
-    margin-top: 0;
-    justify-content: center;
-  }
+	.hero__actions {
+		flex-direction: row;
+		margin-top: 1.875vw;
+		gap: 2.08vw;
+		transform: translateY(-50%);
+		margin-top: 0;
+		justify-content: center;
+	}
 }
 
 .hero__button {
-  width: 15.625rem;
-  height: 3rem;
-  background: #77CB33;
-  border-radius: 3.125rem;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  transition: all .3s;
+	width: 15.625rem;
+	height: 3rem;
+	background: #77CB33;
+	border-radius: 3.125rem;
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	transition: all .3s;
 }
 
 .hero__button:hover {
-  opacity: .5;
+	opacity: .6;
 }
 
 @media (min-width: 768px) {
-  .hero__button {
-    width: 17.708vw;
-    height: 3.906vw;
-    font-size: 1.25vw;
-  }
+	.hero__button {
+		width: 17.708vw;
+		height: 3.906vw;
+		font-size: 1.25vw;
+	}
 }
 
 .hero__button_trial {
-  background: #F6AA00;
+	background: #F6AA00;
 }
 
 .hero__button_request {
-  background: #3AC8AD;
+	background: #3AC8AD;
 }
 
 /* 3つの理由
@@ -445,22 +449,22 @@ li {
 
 
 .reasons__count {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 2.5rem;
-  color: #F11F8D;
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	font-size: 2.5rem;
+	color: #F11F8D;
 }
 
 @media (min-width: 768px) {
-  .reasons .reasons__count {
-    font-size: 60px;
-  }
+	.reasons .reasons__count {
+		font-size: 60px;
+	}
 }
 
 .reasons__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -471,19 +475,19 @@ li {
 		align-items: flex-start;
 	}
 
-  .reasons__second {
-    flex-direction: row-reverse;
-  }
+	.reasons__second {
+		flex-direction: row-reverse;
+	}
 
-  .reasons__text {
-    flex: 1 1 auto;
-  }
+	.reasons__text {
+		flex: 1 1 auto;
+	}
 }
 
 .reasons__image {
-  margin-bottom: 0.375rem;
-  height: 220px;
-  width: 91.4667vw;
+	margin-bottom: 0.375rem;
+	height: 220px;
+	width: 91.4667vw;
 }
 
 .reasons__img {
@@ -526,9 +530,9 @@ li {
 }
 
 @media (min-width: 768px) {
-  .reasons__point {
-    font-size: 28px;
-  }
+	.reasons__point {
+		font-size: 28px;
+	}
 }
 
 .reasons__num {
@@ -563,17 +567,6 @@ li {
 		margin-top: 4.625rem;
 		margin-bottom: 2rem;
 		padding-right: 0.9375rem;
-	}
-
-.courses__contents {
-	margin-bottom: 3.9375rem;
-	background: #F2F9FF;
-}
-
-@media (min-width: 768px) {
-	.courses__contents {
-		margin-bottom: 4.5rem;
-		background: none;
 	}
 }
 
@@ -611,10 +604,20 @@ li {
 	background: #F2F9FF;
 }
 
+.courses__nav a {
+	color: #333;
+	font-size: 18px;
+	font-weight: bold;
+}
+
 .courses__tab-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background: #F2F9FF;
 	padding-top: 1.75rem;
 	padding-bottom: 1.5625rem;
+	width: 100vw;
 }
 
 @media (min-width: 768px) {
@@ -630,9 +633,8 @@ li {
 }
 
 .courses__image {
-	max-width: 33.25rem;
-	width: 43.49vw;
-	height: 220px;
+	width: 91.4667vw;
+	height: auto;
 }
 
 @media (min-width: 768px) {
@@ -641,34 +643,41 @@ li {
 	}
 }
 
-  .courses__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.5rem;
-  }
+.courses__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.5rem;
 }
 
+.courses__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.5rem;
+}
+
+
 .courses__tab a {
-  color: #333;
-  font-size: 1.125rem;
-  font-weight: bold;
+	color: #333;
+	font-size: 1.125rem;
+	font-weight: bold;
 }
 
 @media (min-width: 768px) {
-  .courses__tab a {
-	font-size: 1.5rem;
-  }
+	.courses__tab a {
+		font-size: 1.5rem;
+	}
 
-  .courses__tab:first-child a {
-	padding-top: 0.125rem;
-	padding-right: 0.375rem;
-  }
+	.courses__tab:first-child a {
+		padding-top: 0.125rem;
+		padding-right: 0.375rem;
+	}
 }
 
 .courses__content-item {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -873,7 +882,13 @@ li {
 		height: 16.667vw;
 		width: 50%;
 		justify-content: center;
+        transition: transform 0.3s ease;
 	}
+
+    .footer__faq:hover,
+	.footer__find-class:hover {
+        transform: scale(1.2);
+    }
 }
 
 .footer__faq-title,
