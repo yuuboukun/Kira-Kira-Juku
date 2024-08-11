@@ -46,10 +46,6 @@ document.querySelectorAll('.courses__tab').forEach(tab => {
   });
 });
 
-// $('#smarttab').smartTab({
-//   enableUrlHash: false
-// });
-
 // 初期表示時にtab1以外の要素を非表示にする
 document.querySelectorAll('.courses__tab-content:not(#tab1)').forEach(elm => {
   elm.style.display = 'none';
