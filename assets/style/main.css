@@ -478,10 +478,6 @@ html {
 	.reasons__second {
 		flex-direction: row-reverse;
 	}
-
-	.reasons__text {
-		flex: 1 1 auto;
-	}
 }
 
 .reasons__image {
@@ -503,7 +499,13 @@ html {
 		width: 52.08vw;
 		height: 21.625rem;
 		margin: 0;
-		flex-shrink: 0;
+		flex: 1;
+	}
+}
+
+@media (min-width: 768px) {
+	.reasons__text {
+		flex: 1;
 	}
 }
 
@@ -573,8 +575,9 @@ html {
 .courses__nav {
 	display: flex;
 	justify-content: center;
-	gap: 0.9375rem;
-	margin-top: 1.5rem;
+	gap: 4vw;
+	width: 91.4667vw;
+	margin: 1.5rem auto 0;
 }
 
 @media (min-width: 768px) {
@@ -587,9 +590,13 @@ html {
 }
 
 .courses__tab {
-	padding: 1.25rem 1.1875rem;
 	border-radius: 0.75rem 0.75rem 0rem 0rem;
 	background: #F0F0F0;
+	width: 43.733vw;
+	height: 4.125rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -616,19 +623,22 @@ html {
 	align-items: center;
 	background: #F2F9FF;
 	padding-top: 1.75rem;
-	padding-bottom: 1.5625rem;
+	padding-bottom: 5.6875rem;
 	width: 100vw;
 }
 
 @media (min-width: 768px) {
 	.courses__tab-content {
-		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 		column-gap: 2rem;
 		row-gap: 2.5rem;
 		padding-top: 2.0625rem;
-		padding-bottom: 30px;
+		padding-bottom: 1.875rem;
+		max-width: 1160px;
+		width: 91.4667vw;
+		margin-bottom: 4.4375rem;
 	}
 }
 
@@ -639,7 +649,8 @@ html {
 
 @media (min-width: 768px) {
 	.courses__image {
-		height: 20.5625rem;
+		width: 100%;
+		height: auto;
 	}
 }
 
@@ -647,15 +658,21 @@ html {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	border-radius: 0.5rem;
+	border-radius: 2.933vw;
 }
 
-.courses__img {
+@media (min-width: 768px) {
+	.courses__image img  {
+		border-radius: 0.6875rem;
+	}
+}
+
+/* .courses__img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 0.5rem;
-}
+} */
 
 
 .courses__tab a {
@@ -678,11 +695,14 @@ html {
 .courses__content-item {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 }
 
 @media (min-width: 768px) {
 	.courses__content-item {
-		height: 374px;
+		/* width: 45.862vw; */
+		height: 23.375rem;
+		width: calc((100% - 95px) / 2);
 	}
 }
 
@@ -690,7 +710,6 @@ html {
 	font-size: 1.25rem;
 	font-weight: bold;
 	line-height: 1.8;
-	padding-top: 1px;
 	padding-bottom: 1.125rem;
 	display: flex;
 	align-items: center;
