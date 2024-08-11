@@ -1,4 +1,6 @@
-// ハンバーガーメニュー
+/**
+ * ハンバーガーメニュー
+ */
 var hamburger = $('.hamburger-menu');
 // OPEN/CLOSEボタンをクリックしたら
 $('.hamburger-btn').on('click', function () {
@@ -11,6 +13,9 @@ $(window).on('resize', function () {
   hamburger.removeClass('hamburger-menu-active');
 });
 
+/**
+ * タブ切り替え
+ */
 // 初期表示時にtab1以外の要素を非表示にする
 document.querySelectorAll('.courses__tab-content:not(#tab1)').forEach(elm => {
   elm.style.display = 'none';
