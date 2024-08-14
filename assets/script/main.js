@@ -4,13 +4,13 @@
 var hamburger = $('.hamburger-menu');
 // OPEN/CLOSEボタンをクリックしたら
 $('.hamburger-btn').on('click', function () {
-	// .hamburgerの表示・非表示を繰り返す
-	hamburger.toggleClass('hamburger-menu-active');
+	  // .hamburgerの表示・非表示を繰り返す
+    hamburger.toggleClass('hamburger-menu-active');
 });
 // 画面幅のサイズが変わったら
 $(window).on('resize', function () {
-	// ハンバーガーメニューを閉じる
-	hamburger.removeClass('hamburger-menu-active');
+	  // ハンバーガーメニューを閉じる
+    hamburger.removeClass('hamburger-menu-active');
 });
 
 /**
@@ -18,14 +18,14 @@ $(window).on('resize', function () {
  */
 // 初期表示時にtab1以外の要素を非表示にする
 document.querySelectorAll('.courses__tab-content:not(#tab1)').forEach(elm => {
-	elm.style.display = 'none';
+    elm.style.display = 'none';
 });
 
 // クリックされたタブに応じて要素を表示する
 document.querySelectorAll('.courses__tab').forEach(tab => {
-	tab.addEventListener('click', e => {
-    // デフォルトの動作を無効にする
-		e.preventDefault();
+    tab.addEventListener('click', e => {
+        // デフォルトの動作を無効にする
+        e.preventDefault();
 
 		// クリックされたタブのhref属性に対応する要素を表示し、それ以外の要素を非表示にする
 		let target = tab.querySelector('a');

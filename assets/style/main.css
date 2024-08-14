@@ -816,8 +816,9 @@ html {
 }
 
 .cost__table-body-header {
-	padding-block: 1.25rem;
 	border: 0.0625rem solid #CCC;
+    padding-top: 1.3125rem;
+    padding-bottom: 1.1875rem;
 }
 
 @media (min-width: 768px) {
