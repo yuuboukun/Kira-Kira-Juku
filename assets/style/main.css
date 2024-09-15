@@ -59,6 +59,12 @@ li {
 	padding-bottom: 2.5rem;
 }
 
+@media (max-width: 767px) {
+	.apply__free {
+        padding-top: 0;
+    }
+}
+
 @media (min-width: 768px) {
 	.cta {
 		display: flex;
@@ -67,6 +73,11 @@ li {
 
 	.apply {
 		padding-top: 3.5rem;
+		padding-bottom: 3.5rem;
+	}
+
+	.apply__free {
+		padding-top: 6.5rem;
 		padding-bottom: 3.5rem;
 	}
 }
@@ -81,6 +92,7 @@ li {
 @media (min-width: 768px) {
 	.apply__text {
 		margin-bottom: 1.25rem;
+		margin-inline: auto;
 	}
 }
 
