@@ -49,26 +49,31 @@ li {
 }
 
 /* 入学説明会に申し込む */
-.cta {
-    background: #FF55551A;
-}
-
 .apply {
 	text-align: center;
 	padding-top: 2.5rem;
 	padding-bottom: 2.5rem;
+	background: #FF55551A;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 	.apply__free {
         padding-top: 0;
     }
+} */
+
+.cta {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 1.5rem;
 }
 
 @media (min-width: 768px) {
 	.cta {
-		display: flex;
-		justify-content: center;
+		flex-direction: row;
+		column-gap: 2.2vw;
 	}
 
 	.apply {
@@ -76,10 +81,10 @@ li {
 		padding-bottom: 3.5rem;
 	}
 
-	.apply__free {
+	/* .apply__free {
 		padding-top: 6.5rem;
 		padding-bottom: 3.5rem;
-	}
+	} */
 }
 
 .apply__text {
